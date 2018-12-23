@@ -15,7 +15,7 @@ const drawChart = ({
             bottom: 100,
             left: 100
         },
-        width = 1600 - margin.left - margin.right,
+        width = 1600 - margin.left - margin.right, 
         height = 500 - margin.top - margin.bottom;
     const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
     const maxTempRange = d3.extent(monthlyVariance, d => d.variance).map(v => v + baseTemperature);
